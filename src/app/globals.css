@@ -22,5 +22,252 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.35);
+  color: #fff7ed;
+}
+
+.app-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: #04060c;
+}
+
+.app-background > * {
+  position: absolute;
+  inset: 0;
+}
+
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse at 14% 2%, rgba(255, 153, 0, 0.2), transparent 32%),
+    radial-gradient(ellipse at 80% 4%, rgba(56, 189, 248, 0.16), transparent 34%),
+    radial-gradient(ellipse at 68% 92%, rgba(20, 184, 166, 0.14), transparent 36%),
+    radial-gradient(ellipse at 8% 72%, rgba(59, 130, 246, 0.1), transparent 32%),
+    linear-gradient(180deg, #04060c 0%, #07101d 42%, #05070d 100%);
+  background-size: 125% 125%, 120% 120%, 130% 130%, 120% 120%, 100% 100%;
+  animation: mesh-float 26s ease-in-out infinite alternate;
+  opacity: 0.98;
+  will-change: background-position;
+}
+
+.mesh-glow {
+  inset: auto;
+  border-radius: 9999px;
+  filter: blur(78px);
+  opacity: 0.42;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}
+
+.mesh-glow-orange {
+  left: 6%;
+  top: 5%;
+  width: min(44vw, 720px);
+  height: min(34vw, 520px);
+  background: rgba(255, 153, 0, 0.16);
+  animation: glow-float-a 24s ease-in-out infinite alternate;
+}
+
+.mesh-glow-blue {
+  right: -10%;
+  top: 14%;
+  width: min(50vw, 820px);
+  height: min(36vw, 560px);
+  background: rgba(56, 189, 248, 0.13);
+  animation: glow-float-b 28s ease-in-out infinite alternate;
+}
+
+.mesh-glow-teal {
+  left: 34%;
+  bottom: -18%;
+  width: min(54vw, 880px);
+  height: min(36vw, 560px);
+  background: rgba(20, 184, 166, 0.12);
+  animation: glow-float-c 30s ease-in-out infinite alternate;
+}
+
+.animated-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black 0%, black 58%, transparent 92%);
+  opacity: 0.09;
+  animation: grid-drift 26s linear infinite;
+  will-change: background-position;
+}
+
+.hero-radial-glow {
+  inset: 4rem 10% auto 10%;
+  height: 28rem;
+  border-radius: 9999px;
+  background:
+    radial-gradient(ellipse at center, rgba(59, 130, 246, 0.16), transparent 62%),
+    radial-gradient(ellipse at 42% 45%, rgba(255, 153, 0, 0.1), transparent 48%);
+  filter: blur(42px);
+  opacity: 0.8;
+  animation: hero-glow-breathe 16s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+
+.background-vignette {
+  background:
+    linear-gradient(180deg, rgba(4, 6, 12, 0.16), transparent 18%, transparent 72%, rgba(4, 6, 12, 0.72)),
+    radial-gradient(ellipse at center, transparent 44%, rgba(2, 4, 9, 0.58) 100%);
+}
+
+.premium-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.75rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.032)),
+    rgba(8, 12, 22, 0.76);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(22px);
+}
+
+@keyframes mesh-float {
+  from {
+    background-position:
+      0% 0%,
+      100% 0%,
+      60% 100%,
+      0% 80%,
+      0 0;
+  }
+
+  to {
+    background-position:
+      8% 4%,
+      92% 8%,
+      54% 92%,
+      6% 72%,
+      0 0;
+  }
+}
+
+@keyframes grid-drift {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 72px 72px;
+  }
+}
+
+@keyframes hero-glow-breathe {
+  from {
+    opacity: 0.58;
+    transform: translate3d(0, 0, 0) scale(0.98);
+  }
+
+  to {
+    opacity: 0.86;
+    transform: translate3d(0, 16px, 0) scale(1.03);
+  }
+}
+
+@keyframes glow-float-a {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.32;
+  }
+
+  to {
+    transform: translate3d(42px, 24px, 0) scale(1.08);
+    opacity: 0.48;
+  }
+}
+
+@keyframes glow-float-b {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.28;
+  }
+
+  to {
+    transform: translate3d(-54px, 32px, 0) scale(1.06);
+    opacity: 0.43;
+  }
+}
+
+@keyframes glow-float-c {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.24;
+  }
+
+  to {
+    transform: translate3d(34px, -34px, 0) scale(1.08);
+    opacity: 0.38;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradient-mesh {
+    background-size: 170% 170%, 150% 150%, 170% 170%, 150% 150%, 100% 100%;
+  }
+
+  .animated-grid {
+    background-size: 56px 56px;
+    opacity: 0.07;
+  }
+
+  .mesh-glow {
+    filter: blur(58px);
+  }
+
+  .hero-radial-glow {
+    inset: 5rem -20% auto -20%;
+    height: 20rem;
+  }
+}
+
+.premium-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.045)),
+    rgba(255, 255, 255, 0.04);
+  padding: 0.85rem 1.15rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(251, 191, 36, 0.55);
+  background:
+    linear-gradient(180deg, rgba(249, 115, 22, 0.22), rgba(251, 191, 36, 0.09)),
+    rgba(249, 115, 22, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
