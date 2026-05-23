@@ -31,12 +31,13 @@ CloudEasy automatically generates:
 -Vercel deployment 
 
 📸 Project Preview 
-![CloudEasy Preview](./public/preview.png)
+<img width="1845" height="898" alt="image" src="https://github.com/user-attachments/assets/99a3f8ac-fe59-47bb-9549-df3b1a38194d" />
 
-## 🎥 Demo Video
-https://youtu.be/rMUXN6rnM_Q
 
-Vercel Deployment url: cloudeasy-ai-aws-planner.vercel.app
+##🎥 Demo Video
+Youtube demo video - https://youtu.be/rMUXN6rnM_Q
+
+Vercel Deployment url: cloudeasy-ai-aws-planner-8mvpfokw1-shreyash0301.vercel.app
 
 GitHub Repository GitHub Repo: https://github.com/shreyashp0301/CloudEasy-AI-AWS-Planner
 
