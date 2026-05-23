@@ -32,7 +32,7 @@ GitHub Repository GitHub Repo: https://github.com/shreyashp0301/CloudEasy-AI-AWS
 - Auto Scaling 
 - Elastic Load Balancer 
 
-🎯 Problem Statement:
+🎯Problem Statement:
 Many beginner developers struggle with: 
 -Understanding AWS architecture 
 -Infrastructure planning 
@@ -43,7 +43,7 @@ Many beginner developers struggle with:
 
 simplifies this process using AI-powered infrastructure guidance.
 
-🔮 Future Improvements:
+🔮Future Improvements:
 -Multi-cloud support 
 -Direct Terraform export 
 -Architecture diagram export 
@@ -51,7 +51,7 @@ simplifies this process using AI-powered infrastructure guidance.
 -Team collaboration features 
 -One-click deployment integrations 
 
-💻 Developer
+💻Developer
 Built by Shreyash Parmale for the DoraHacks AWS Prompt Planet Challenge.
 
-📜 License: MIT License
+📜License: MIT License
