@@ -1,39 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+☁ CloudEasy AI-Powered AWS Deployment Planner
 
-## Getting Started
+CloudEasy is an AI-powered cloud infrastructure planning platform that helps developers generate AWS deployment architectures using simple natural language prompts.
+Instead of manually researching AWS services, Terraform setup, security configurations, and deployment workflows, users can simply describe their project idea in plain English and CloudEasy generates a complete deployment planning experience instantly.
 
-First, run the development server:
+🚀 Features:
+-AI-powered AWS deployment planning 
+-AWS architecture recommendations 
+-Terraform infrastructure guidance 
+-Security best-practice suggestions 
+-Deployment workflow generation 
+-Infrastructure cost estimation 
+-Interactive cloud planning UI 
+-Beginner-friendly experience
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🧠 Example Prompt> "Deploy a MERN stack application with MongoDB, auto scaling, load balancer, and secure API architecture.
+CloudEasy automatically generates: 
+-AWS architecture suggestions 
+-EC2 / RDS / Load Balancer recommendations 
+-Terraform setup guidance 
+-Security checklist 
+-Deployment workflow 
+-Estimated infrastructure cost
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠 Tech Stack:
+- Next.js 
+-TypeScript 
+-TailwindCSS 
+-OpenRouter AI 
+-AWS-inspired architecture planning 
+-Vercel deployment 
 
-<img width="1796" height="899" alt="image" src="https://github.com/user-attachments/assets/6707ffb3-a8fa-4376-8208-8d63390e1af4" />
+📸 Project Preview 
+![CloudEasy Preview](./public/preview.png)
 
+## 🎥 Demo Video
+https://youtu.be/rMUXN6rnM_Q
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Vercel Deployment url: cloudeasy-ai-aws-planner.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+GitHub Repository GitHub Repo: https://github.com/shreyashp0301/CloudEasy-AI-AWS-Planner
 
-## Learn More
+☁ AWS Services Referenced:
+- EC2 
+- S3 
+- RDS 
+- IAM 
+- VPC 
+- CloudFront 
+- Auto Scaling 
+- Elastic Load Balancer 
 
-To learn more about Next.js, take a look at the following resources:
+🎯 Problem Statement:
+Many beginner developers struggle with: 
+-Understanding AWS architecture 
+-Infrastructure planning 
+-Terraform setup 
+-Security configuration 
+-Cost estimation 
+-Deployment workflows CloudEasy 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+simplifies this process using AI-powered infrastructure guidance.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🔮 Future Improvements:
+-Multi-cloud support 
+-Direct Terraform export 
+-Architecture diagram export 
+-Real AWS pricing APIs 
+-Team collaboration features 
+-One-click deployment integrations 
 
-## Deploy on Vercel
+💻 Developer
+Built by Shreyash Parmale for the DoraHacks AWS Prompt Planet Challenge.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📜 License: MIT License
