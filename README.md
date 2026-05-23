@@ -3,24 +3,12 @@
 CloudEasy is an AI-powered cloud infrastructure planning platform that helps developers generate AWS deployment architectures using simple natural language prompts.
 Instead of manually researching AWS services, Terraform setup, security configurations, and deployment workflows, users can simply describe their project idea in plain English and CloudEasy generates a complete deployment planning experience instantly.
 
-🚀 Features: AI-powered AWS deployment planning, AWS architecture recommendations, Terraform infrastructure guidance , Security best-practice suggestions, Deployment workflow generation, Infrastructure cost estimation, Interactive cloud planning UI, Beginner-friendly experience
+🚀Features: AI-powered AWS deployment planning, AWS architecture recommendations, Terraform infrastructure guidance , Security best-practice suggestions, Deployment workflow generation, Infrastructure cost estimation, Interactive cloud planning UI, Beginner-friendly experience
 
-🧠 Example Prompt> "Deploy a MERN stack application with MongoDB, auto scaling, load balancer, and secure API architecture.
-CloudEasy automatically generates: 
--AWS architecture suggestions 
--EC2 / RDS / Load Balancer recommendations 
--Terraform setup guidance 
--Security checklist 
--Deployment workflow 
--Estimated infrastructure cost
+🧠Example Prompt> "Deploy a MERN stack application with MongoDB, auto scaling, load balancer, and secure API architecture.
+CloudEasy automatically generates: AWS architecture suggestions, EC2 / RDS / Load Balancer recommendations, Terraform setup guidance, Security checklist, Deployment workflow, Estimated infrastructure cost
 
-🛠 Tech Stack:
-- Next.js 
--TypeScript 
--TailwindCSS 
--OpenRouter AI 
--AWS-inspired architecture planning 
--Vercel deployment 
+🛠 Tech Stack: Next.js, TypeScript, TailwindCSS, OpenRouter AI, AWS-inspired architecture planning, Vercel deployment 
 
 📸 Project Preview 
 <img width="1845" height="898" alt="image" src="https://github.com/user-attachments/assets/99a3f8ac-fe59-47bb-9549-df3b1a38194d" />
