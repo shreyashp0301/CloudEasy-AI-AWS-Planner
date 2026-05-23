@@ -4,14 +4,14 @@ CloudEasy is an AI-powered cloud infrastructure planning platform that helps dev
 Instead of manually researching AWS services, Terraform setup, security configurations, and deployment workflows, users can simply describe their project idea in plain English and CloudEasy generates a complete deployment planning experience instantly.
 
 🚀 Features:
--AI-powered AWS deployment planning 
--AWS architecture recommendations 
--Terraform infrastructure guidance 
--Security best-practice suggestions 
--Deployment workflow generation 
--Infrastructure cost estimation 
--Interactive cloud planning UI 
--Beginner-friendly experience
+AI-powered AWS deployment planning
+AWS architecture recommendations
+Terraform infrastructure guidance 
+Security best-practice suggestions
+Deployment workflow generation
+Infrastructure cost estimation
+Interactive cloud planning UI 
+Beginner-friendly experience
 
 🧠 Example Prompt> "Deploy a MERN stack application with MongoDB, auto scaling, load balancer, and secure API architecture.
 CloudEasy automatically generates: 
