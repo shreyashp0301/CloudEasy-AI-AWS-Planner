@@ -17,7 +17,8 @@ CloudEasy automatically generates: AWS architecture suggestions, EC2 / RDS / Loa
 ##🎥 Demo Video
 Youtube demo video - https://youtu.be/rMUXN6rnM_Q
 
-Vercel Deployment url: cloudeasy-ai-aws-planner-8mvpfokw1-shreyash0301.vercel.app
+Vercel Deployment url:
+cloudeasy-ai-aws-planner-8mvpfokw1-shreyash0301.vercel.app
 
 GitHub Repository GitHub Repo: https://github.com/shreyashp0301/CloudEasy-AI-AWS-Planner
 
